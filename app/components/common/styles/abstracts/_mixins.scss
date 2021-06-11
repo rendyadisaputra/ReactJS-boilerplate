@@ -1,0 +1,91 @@
+@mixin clearfix {
+  &::after,
+  &::before {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// @mixin container {
+//   background-color: #fff;
+//   box-shadow: 0 0.4rem 1rem 0 rgba(0, 0, 0, 0.2);
+//   padding: 2rem;
+//   border-radius: 1.5rem;
+// }
+
+@mixin displayFlex($justify: flex-start, $align: flex-start) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin horizontalLine {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ebf2f7;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == smallphone {
+    @media only screen and (max-width: 20.625em) {
+      @content;
+    } // 320px
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 48em) {
+      @content;
+    } //768px
+  }
+
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: 64em) {
+      @content;
+    } //1024px
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }
+}
+
+@mixin containerBox {
+  max-width: $grid-width;
+  width: calc(100% - 4rem);
+
+  @include respond(big-desktop) {
+    max-width: $grid-width-big;
+  }
+
+  @include respond(phone) {
+    width: calc(100% - 2rem);
+  }
+}
+
+@mixin ringPos($size: 0, $top: 0, $left: 0, $transX: 0, $transY: 0) {
+  height: $size;
+  width: $size;
+  top: $top;
+  left: $left;
+  transform: translate($transX, $transY);
+}

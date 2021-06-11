@@ -1,0 +1,4 @@
+// * Get FAQ
+export const GET_ABOUT_US_REQUEST = 'AboutUsPage/GET_ABOUT_US_REQUEST';
+export const GET_ABOUT_US_FAILURE = 'AboutUsPage/GET_ABOUT_US_FAILURE';
+export const GET_ABOUT_US_SUCCESS = 'AboutUsPage/GET_ABOUT_US_SUCCESS';

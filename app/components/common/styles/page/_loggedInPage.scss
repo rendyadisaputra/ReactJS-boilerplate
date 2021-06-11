@@ -1,0 +1,22 @@
+.referral-program {
+  background: rgba(135, 189, 174, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px 50px 0 0;
+
+  > svg {
+    fill: black;
+    font-size: 13rem;
+    height: 4rem;
+  }
+}
+
+.my-information {
+  background: white;
+  border-radius: 50px 50px 0 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: -5rem;
+}

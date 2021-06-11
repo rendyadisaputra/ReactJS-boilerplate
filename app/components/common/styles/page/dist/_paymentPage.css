@@ -1,0 +1,9 @@
+.payment .card-pgs {
+  display: flex;
+  justify-content: center;
+}
+.payment .card-pgs button {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}

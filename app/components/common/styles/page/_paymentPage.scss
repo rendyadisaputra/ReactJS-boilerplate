@@ -1,0 +1,55 @@
+.payment{
+  .card-pgs:first-child{
+    border-top-width: 0px;
+  }
+  .card-pgs{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    button{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      .icon-arrow {
+        width: 30px;
+        > svg {
+          stroke: $color-primary;
+          font-size: 2.2rem;
+          transform: rotate(270deg);
+        }
+      }
+      >div{
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+        font-size: 16px;
+        font-weight: normal;
+        width: calc(100% - 30px);
+      }
+      img{
+        height: 40px;
+        width: auto;
+        max-width: unset !important;  
+        margin : 0 5px 0 0 !important;
+        max-height: unset !important;
+      }
+    }
+    button.btn{
+      display: flex;
+      justify-content: center;
+      min-height: 40px;
+    }
+  }
+
+  .ctn-click{
+    padding: 25px 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}

@@ -1,0 +1,70 @@
+.carousel {
+  &__arrow {
+    align-self: center;
+    font-size: 3rem;
+    background: unset;
+    border: unset;
+    outline: none;
+    transition: all 0.2s ease;
+
+    &:active,
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    > svg {
+      stroke: white;
+    }
+  }
+}
+
+.carousel-testimoni {
+  text-align: center;
+
+  > svg {
+    font-size: 5rem;
+    align-self: center;
+  }
+
+  > h1 {
+    margin: 2rem 0 !important;
+    line-height: 4rem;
+  }
+
+  > p {
+    font-size: 2rem;
+  }
+}
+
+.carousel-product {
+  min-height: 40rem;
+  width: 100%;
+
+  > .image-container {
+    border-radius: 6px;
+
+    > .image {
+      object-fit: cover;
+    }
+  }
+
+  &__arrow {
+    align-self: center;
+    font-size: 3rem;
+    background: unset;
+    border: unset;
+    outline: none;
+    transition: all 0.2s ease;
+
+    &:active,
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    > svg {
+      stroke: black;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+.react-datepicker {
+  border: 0 !important;
+  display: block !important;
+
+  &__month-container {
+    float: unset !important;
+  }
+
+  &__header {
+    font-family: 'Lato', sans-serif !important;
+    background-color: transparent !important;
+  }
+
+  &__current-month {
+    font-size: 2rem !important;
+  }
+
+  &__month {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  &__week {
+    &:first-child {
+      margin-top: 1.5rem;
+    }
+
+    font-family: 'Lato', sans-serif !important;
+    display: flex !important;
+  }
+
+  &__day {
+    flex: 1;
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin: 0.7rem !important;
+    outline: none !important;
+
+    &--selected {
+      background-color: $color-primary !important;
+      border-radius: 50% !important;
+    }
+
+    &--keyboard-selected {
+      background-color: transparent !important;
+      border-radius: 50% !important;
+      color: black !important;
+
+      &:hover {
+        background-color: rgba($color: $color-primary, $alpha: 0.3) !important;
+        border-radius: 50% !important;
+      }
+    }
+
+    &--outside-month {
+      color: #bdbdbd !important;
+    }
+
+    &--disabled {
+      color: #bdbdbd !important;
+    }
+
+    &:hover {
+      background-color: rgba($color: $color-primary, $alpha: 0.3) !important;
+      border-radius: 50% !important;
+    }
+  }
+
+  &__day-names {
+    display: flex;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  &__day-name {
+    display: flex;
+    flex: 1;
+    color: #767676 !important;
+  }
+
+  // * Timer
+  &__time-container {
+    float: unset !important;
+    width: unset !important;
+  }
+
+  &__time-box {
+    width: unset !important;
+    margin: unset !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__time-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif !important;
+    text-transform: lowercase;
+    color: #192426 !important;
+    height: calc(315px + (1.7rem / 1)) !important;
+    outline: none !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &-item {
+      height: unset !important;
+      padding: 1rem 3rem !important;
+      border: 1px solid #c4c4c4;
+      width: 50%;
+      border-radius: 3px;
+      outline: none;
+
+      &--selected {
+        transition: all 0.2s;
+        background-color: $color-primary !important;
+        border: 0 !important;
+        font-family: 'Lato', sans-serif !important;
+        font-weight: 400 !important;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1.3rem;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .react-datepicker__header--time.react-datepicker__header--time--only {
+    border-bottom: 0 !important;
+  }
+}
+
+.arrow {
+  background: transparent;
+  border: 0;
+  font-size: 1.8rem;
+
+  &--left {
+    transform: rotate(90deg);
+    > svg {
+      stroke: black;
+    }
+  }
+
+  &--right {
+    transform: rotate(270deg);
+
+    > svg {
+      stroke: black;
+    }
+  }
+}

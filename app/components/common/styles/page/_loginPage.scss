@@ -1,0 +1,51 @@
+.login-form {
+  background: linear-gradient(47.17deg, #10777e -4.41%, #63aaac 88.06%);
+  padding: 2rem 0 8rem 0;
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 6rem;
+    margin: 0 5rem;
+
+    .icon-plus {
+      font-size: 10rem;
+      margin-left: -2.5rem;
+    }
+
+    .title {
+      > h2,
+      span {
+        font-size: 3rem;
+      }
+      margin-bottom: -3.7rem;
+      margin-left: -2.5rem;
+    }
+  }
+}
+
+.forget-password-form {
+  background: linear-gradient(47.17deg, #10777e -4.41%, #63aaac 88.06%);
+  padding: 2rem 0 8rem 0;
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 6rem;
+    margin: 0 5rem;
+
+    .icon-plus {
+      font-size: 10rem;
+      margin-left: -2.5rem;
+    }
+  }
+
+  .title-header {
+    > h2,
+    span {
+      font-size: 3rem;
+    }
+    margin-bottom: -8.5rem;
+    margin-left: -2.5rem;
+  }
+}

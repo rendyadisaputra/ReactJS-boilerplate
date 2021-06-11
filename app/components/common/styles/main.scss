@@ -1,0 +1,39 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// @import "base/animations";
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/header';
+@import 'components/button';
+@import 'components/card';
+@import 'components/cardProduct';
+@import 'components/footer';
+@import 'components/carousel';
+@import 'components/textInput';
+@import 'components/loaders';
+@import 'components/stepper';
+@import 'components/sidenav';
+@import 'components/slider';
+@import 'components/fileUpload';
+@import 'components/tabs';
+@import 'components/imageContainer';
+@import 'components/list';
+@import 'components/datepicker';
+
+@import 'layouts/messages';
+@import 'layouts/photos';
+
+@import 'page/homePage';
+@import 'page/createAccountPage';
+@import 'page/questionarePage';
+@import 'page/notFoundPage';
+@import 'page/loggedInPage';
+@import 'page/treatmentPlan';
+@import 'page/aboutUsPage';
+@import 'page/paymentPage';
+@import 'page/loginPage';
+@import 'page/productPage';

@@ -1,0 +1,21 @@
+.upload-box {
+  border: 1px dashed $color-primary;
+  border-radius: 5px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.upload-progress {
+  margin-top: 2rem;
+  user-select: none;
+
+  &__bar {
+    > p {
+      margin: 0.5rem 0;
+    }
+  }
+}

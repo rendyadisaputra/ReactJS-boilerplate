@@ -1,0 +1,27 @@
+.questionare {
+  &__heading {
+    > svg {
+      font-size: 6rem;
+      margin-right: 1.5rem;
+      margin-top: -2.5rem;
+    }
+
+    > h1 {
+      @include respond(smallphone) {
+        font-size: 3rem !important;
+      }
+    }
+  }
+
+  &__content {
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    min-height: 30vh;
+  }
+
+  &__footer {
+    margin-top: 5rem;
+  }
+}

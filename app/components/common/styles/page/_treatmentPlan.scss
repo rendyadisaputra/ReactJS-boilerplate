@@ -1,0 +1,25 @@
+.treatment-plan {
+  .list:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .foryou {
+    border-radius: 50px 50px 0 0;
+  }
+
+  .list-step {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.title.underline {
+  padding-bottom: 1rem;
+  border-bottom: 8px solid $color-peach;
+}
+
+.title.underline-green {
+  padding-bottom: 1rem;
+  border-bottom: 8px solid rgba(135, 189, 174, 1);
+}

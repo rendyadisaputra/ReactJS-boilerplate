@@ -1,0 +1,4 @@
+// * Get Referral Info
+export const REFERRAL_FETCH_REQUEST = 'ReferralPage/REFERRAL_FETCH_REQUEST';
+export const REFERRAL_FETCH_FAILURE = 'ReferralPage/REFERRAL_FETCH_FAILURE';
+export const REFERRAL_FETCH_SUCCESS = 'ReferralPage/REFERRAL_FETCH_SUCCESS';

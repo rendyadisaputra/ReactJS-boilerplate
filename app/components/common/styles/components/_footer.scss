@@ -1,0 +1,22 @@
+.footer {
+  &__icon-sosmed {
+    font-size: 2.6rem;
+
+    > svg {
+      &:not(:last-child) {
+        margin-right: 2.5rem;
+      }
+    }
+  }
+
+  &__menu {
+    padding: 3rem 0;
+    border-top: 1px solid black;
+
+    > div {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

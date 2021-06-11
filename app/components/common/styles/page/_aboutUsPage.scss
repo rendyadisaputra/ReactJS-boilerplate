@@ -1,0 +1,72 @@
+.about-us {
+  &__card {
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+    margin-top: -8.5rem;
+
+    > p {
+      font-size: 2rem;
+    }
+  }
+}
+
+.collapse-custom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+
+  &__button {
+    background: transparent !important;
+    border: unset !important;
+    flex: 1;
+  }
+
+  &__header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  &__title {
+    line-height: 2.5rem;
+  }
+
+  &__icon {
+    transition: all 0.3s;
+
+    > svg {
+      font-size: 2.5rem;
+      stroke: $color-primary;
+    }
+  }
+
+  &__icon.open {
+    transition: all 0.3s;
+
+    > svg {
+      transform: rotate(180deg);
+      stroke: $color-primary;
+    }
+  }
+
+  &__icon.close {
+    transition: all 0.3s;
+
+    > svg {
+      transform: rotate(0deg);
+      stroke: $color-primary;
+    }
+  }
+}
+
+@keyframes rotateDown {
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateUp {
+  100% {
+    transform: rotate(180deg);
+  }
+}

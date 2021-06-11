@@ -1,0 +1,83 @@
+.btn {
+  background-color: $color-primary !important;
+  color: white !important;
+  text-transform: uppercase;
+  padding: 0.7rem 2.3rem !important;
+  font-size: 1.6rem !important;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700 !important;
+  border-radius: 2rem !important;
+  border: 1px solid transparent;
+  letter-spacing: 1px;
+  &.outline{
+    background-color: transparent !important;
+    color: $color-primary !important;
+    border-color: $color-primary !important;
+  }
+  &.nrml-text{
+    text-transform: none;
+  }
+  &:disabled {
+    opacity: 1 !important;
+    background-color: #bdbdbd !important;
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      transition: all 0.3s;
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+      transform: translateY(-2px);
+    }
+
+    &:focus,
+    &:active {
+      transition: all 0.3s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      transform: translateY(0);
+    }
+  }
+}
+
+.btn.btn-sm {
+  padding: 0.7rem 1.8rem !important;
+  font-size: 1.4rem !important;
+}
+
+.btn-white {
+  background-color: white !important;
+  color: $color-primary !important;
+
+  &--spacing {
+    margin: 5rem 0 3rem 0;
+  }
+}
+
+.btn-white.text-black {
+  color: black !important;
+}
+
+.btn-rose {
+  background-color: $color-rose !important;
+  color: white !important;
+}
+
+.btn-back {
+  background-color: unset !important;
+  border: none !important;
+
+  > svg {
+    font-size: 4rem;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.btn-text {
+  background-color: transparent;
+  border: 0;
+  text-decoration-line: underline !important;
+}

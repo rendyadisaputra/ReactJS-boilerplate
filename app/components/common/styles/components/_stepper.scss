@@ -1,0 +1,137 @@
+.stepper {
+  display: flex;
+
+  &-content {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    > svg {
+      font-size: 1.4rem;
+      stroke: white;
+    }
+  }
+
+  &__border {
+    height: 1px;
+    background-color: #828282;
+    top: 18%;
+    right: 0%;
+    left: 0%;
+    position: absolute;
+    transform: translate(58%, 0%);
+    z-index: 0;
+
+    @include respond(phone) {
+      top: 14%;
+    }
+  }
+}
+
+.stepper-vertical {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+
+  > .stepper {
+    &__head {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: transparent;
+      border: 0;
+      cursor: unset !important;
+    }
+  }
+
+  .stepper__head--active {
+    &::after {
+      content: '';
+      background-color: rgba(135, 189, 174, 0.15);
+      width: 100%;
+      position: absolute;
+      transform: scale(1.1);
+      height: 5rem;
+      border-radius: 3rem;
+    }
+  }
+
+  .stepper__title {
+    text-align: left;
+  }
+
+  .stepper__section {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    margin-left: 0px;
+  }
+
+  .stepper__connector {
+    width: 0;
+    border: 0 none;
+    flex: auto;
+    color: #bdbdbd;
+  }
+}
+
+.stepper-vertical .stepper__connector {
+  border-left-width: 1px;
+  border-left-style: solid;
+  min-height: 28px;
+  margin: 0rem 1.1rem;
+  height: auto;
+}
+
+.stepper__head__index {
+  width: 22px;
+  height: 22px;
+  background: rgba(130, 130, 130, 1);
+  line-height: 1.25em;
+  border-radius: 50%;
+  margin-right: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--active {
+    background: $color-primary;
+  }
+
+  > svg {
+    stroke: white;
+    font-size: 1.6rem;
+  }
+
+  @include respond(smallphone) {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  @include respond(phone) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.arrow-icon {
+  transform: rotate(270deg);
+  font-size: 1.4rem;
+  stroke: white;
+}

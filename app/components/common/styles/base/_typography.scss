@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif !important;
+  font-size: $default-font-size;
+  line-height: 1.5;
+  color: $color-text-dark;
+  background-color: $color-white;
+
+  @include respond(phone) {
+    font-size: 1.75rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 0 !important;
+}
+
+p {
+  font-size: $default-font-size;
+
+  @include respond(phone) {
+    font-size: 1.75rem;
+  }
+}
+
+a {
+  text-decoration: none !important;
+  color: unset !important;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+.ln-height-2 {
+  line-height: 1.7;
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.title {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  font-size: 2.75rem;
+}
+
+.pt-serif {
+  font-family: 'PT Serif', serif;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.text-grey {
+  color: $color-text-grey;
+}
+
+.text-red {
+  color: red !important;
+}
+
+.text-black {
+  color: rgba(25, 36, 38, 1);
+}
+
+.text-green {
+  color: $color-primary;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.size14 {
+  font-size: 1.4rem !important;
+}
+.size15 {
+  font-size: 1.5rem !important;
+}
+.size16 {
+  font-size: 1.6rem !important;
+}
+
+.size17 {
+  font-size: 1.75rem !important;
+}
+.size18 {
+  font-size: 1.8rem !important;
+}
+.size19 {
+  font-size: 1.9rem !important;
+}
+.size20 {
+  font-size: 2rem !important;
+}
+.size21 {
+  font-size: 2.1rem !important;
+}
+.size22 {
+  font-size: 2.2rem !important;
+}
+.size225 {
+  font-size: 2.25rem !important;
+}
+.size23 {
+  font-size: 2.3rem !important;
+}
+.size24 {
+  font-size: 2.4rem !important;
+}
+.size25 {
+  font-size: 2.5rem !important;
+}
+.size26 {
+  font-size: 2.6rem !important;
+}
+.size27 {
+  font-size: 2.7rem !important;
+}
+
+.size28 {
+  font-size: 2.8rem !important;
+}
+
+.size29 {
+  font-size: 2.9rem !important;
+}
+
+.size30 {
+  font-size: 3rem !important;
+}
+
+.size31 {
+  font-size: 3.1rem !important;
+}
+
+.size32 {
+  font-size: 3.2rem !important;
+}
+
+.size33 {
+  font-size: 3.3rem !important;
+}
+
+.size34 {
+  font-size: 3.4rem !important;
+}
+
+.size35 {
+  font-size: 3.5rem !important;
+}
+
+.size36 {
+  font-size: 3.6rem !important;
+}
+
+.size37 {
+  font-size: 3.7rem !important;
+}
+
+.size38 {
+  font-size: 3.85rem !important;
+}
+
+.size50 {
+  font-size: 5rem !important;
+}
+
+// Font Weight
+.fw300 {
+  font-weight: 300 !important;
+}
+.fw400 {
+  font-weight: 400 !important;
+}
+.fw500 {
+  font-weight: 500 !important;
+}
+.fw600 {
+  font-weight: 600 !important;
+}
+.fw700 {
+  font-weight: 700 !important;
+}
+.fw800 {
+  font-weight: 800;
+}
+.fw900 {
+  font-weight: 900;
+}

@@ -1,0 +1,245 @@
+.card-myskin {
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px !important;
+    .bottom{
+      padding: 0 2.5rem 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+.testimoni {
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    width: 22rem;
+    height: 22rem;
+    object-fit: cover;
+    object-position: center;
+    align-self: center;
+    margin-bottom: 3rem;
+  }
+
+  .treatment-time {
+    margin-top: 0.7rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0.5rem 0;
+
+    > p {
+      margin: 0 !important;
+      padding: 0 !important;
+      text-transform: uppercase;
+      color: $color-text-grey;
+    }
+  }
+
+  .description {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid black;
+
+    > p {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.diagnosa {
+  &__header {
+    background-color: $color-green-teal;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__content {
+    padding: 2rem 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-text-grey;
+    }
+
+    > p {
+      letter-spacing: 0.5px;
+      font-size: 2.1rem;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &--spacing {
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+}
+
+.dermatologist {
+  *.col-3 {
+    padding: 0 !important;
+  }
+
+  *.col-9 {
+    padding: 0 !important;
+    padding-left: 1rem !important;
+  }
+
+  &__image {
+    height: 13rem;
+    width: 13rem;
+    object-fit: cover;
+    object-position: center;
+    flex: 1;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.2));
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.2));
+    margin-right: 2rem;
+  }
+
+  * hr {
+    border-top: 1px solid $color-primary;
+    margin: 5px 0 !important;
+  }
+}
+
+.card-myskin.card-form {
+  border-top: 8px solid $color-peach !important;
+  border-radius: 5px !important;
+}
+
+.card-myskin.card-service--recommended {
+  border-top: 7px solid $color-primary !important;
+  border-radius: 5px !important;
+}
+
+.card-myskin.card-service--default {
+  border-top: 7px solid #87bdae !important;
+  border-radius: 5px !important;
+}
+
+.card-guides {
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 2rem;
+  position: relative;
+
+  &__content {
+    a {
+      border-radius: 50%;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: left;
+      border-radius: 50%;
+    }
+
+    h2 {
+      line-height: 3rem;
+    }
+
+    .col-3 {
+      margin-right: 2rem !important;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 16%;
+    background: $color-peach;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px 0 0 5px;
+  }
+}
+
+.card-foryou {
+  padding: 3rem 0;
+
+  &__img {
+    > img {
+      object-position: center;
+      object-fit: fill;
+    }
+
+    &--item {
+      a {
+        border-radius: 50%;
+      }
+
+      img {
+        border-radius: 50%;
+        transform: scale(2);
+      }
+    }
+  }
+
+  &__title {
+    padding-left: 0 !important;
+  }
+
+  &--item {
+    &:not(:last-child) {
+      padding-bottom: 2rem;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.card-foryou--sm {
+  padding: 1rem 0;
+}
+
+.card-service {
+  .recommended {
+    color: white;
+    text-transform: uppercase;
+    background: $color-primary;
+    width: fit-content;
+    letter-spacing: 0.5px;
+    padding: 0rem 1.5rem 0.5rem;
+
+    > p {
+      margin: 0;
+    }
+  }
+
+  &__content {
+    > h2 {
+      line-height: 3rem;
+    }
+
+    > p:first-child {
+      margin: 0;
+      margin-bottom: 0.7rem;
+    }
+  }
+}
+
+// * Appointment History
+.card-appointment {
+  .profile {
+    width: 6rem;
+    height: 6rem;
+
+    > .image-container {
+      border-radius: 50%;
+    }
+  }
+
+  .icon-arrow {
+    > svg {
+      stroke: $color-primary;
+      font-size: 2.2rem;
+      transform: rotate(270deg);
+    }
+  }
+}
